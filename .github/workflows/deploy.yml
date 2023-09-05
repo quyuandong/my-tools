@@ -50,7 +50,7 @@ jobs:
           # 注意替换为你的 GitHub 源仓库地址
           source-repo: git@github.com:quyuandong/my-tools.git
           # 注意替换为你的 Gitee 目标仓库地址
-          destination-repo: git@gitee.com:qyd_9/my-tools.git
+          destination-repo: git@gitee.com:qyd_me/my-tools.git
 
       # 自动部署gitee gh-pages分支
       - name: '部署至gitee的gh-pages'
