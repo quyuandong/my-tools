@@ -129,7 +129,7 @@ onMounted(() => {
     let script = document.createElement('script');
     script.type = 'text/javascript';
     script.id = 'fish'
-    script.src = 'https://web-abin.gitee.io/abin-web/js/fish.js'
+    script.src = 'https://web-abin.gitee.io/my-tools/js/fish.js'
     document.body.appendChild(script);
   }
 })

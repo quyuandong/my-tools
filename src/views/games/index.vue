@@ -1,20 +1,20 @@
 <template>
   <div class="box">
-    <a class="game-item" target="_blank" :href="`${isLocal?'../../abin-web/public':'.'}/games/snake.html`">
+    <a class="game-item" target="_blank" :href="`${isLocal?'../../my-tools/public':'.'}/games/snake.html`">
       <img src="@/assets/games/logo-snake.png" alt="" class="game-logo">
       <div class="game-info">
         <div class="game-title">贪吃蛇</div>
         <div class="game-desc">好玩的贪吃蛇</div>
       </div>
     </a>
-    <a class="game-item" target="_blank" :href="`${isLocal?'../../abin-web/public':'.'}/games/five-chess.html`">
+    <a class="game-item" target="_blank" :href="`${isLocal?'../../my-tools/public':'.'}/games/five-chess.html`">
       <img src="@/assets/games/logo-five-chess.png" alt="" class="game-logo">
       <div class="game-info">
         <div class="game-title">五子棋</div>
         <div class="game-desc">让我来看看你的棋艺！</div>
       </div>
     </a>
-    <a class="game-item" target="_blank" :href="`${isLocal?'../../abin-web/public':'.'}/games/fly-bird/index.html`">
+    <a class="game-item" target="_blank" :href="`${isLocal?'../../my-tools/public':'.'}/games/fly-bird/index.html`">
       <img src="@/assets/games/logo-fly-bird.png" alt="" class="game-logo">
       <div class="game-info">
         <div class="game-title">飞翔的小鸟</div>
