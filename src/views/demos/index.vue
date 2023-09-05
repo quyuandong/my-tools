@@ -1,5 +1,5 @@
 <template>
-  <img src="@/assets/images/qq-code.jpeg" alt=""/>
+  <div>样例列表</div>
 </template>
 
 <script setup>

@@ -3,45 +3,45 @@ import Layout from "@/components/Layout/index.vue";
 
 export const constantRoutes = [
   {
-    path: '/',
+    path: '/my-tools/',
     component: Layout,
-    redirect: '/tools',
+    redirect: '/my-tools/tools',
     hidden: true,
     children: [
       {
-        path: '/home',
+        path: '/my-tools/home',
         component: () => import('@/views/home/index.vue')
       },
       {
-        path: '/games',
+        path: '/my-tools/games',
         component: () => import('@/views/games/index.vue')
       },
       {
-        path: '/tools',
+        path: '/my-tools/tools',
         component: () => import('@/views/tools/index.vue')
       },
       {
-        path: '/notes',
+        path: '/my-tools/notes',
         component: () => import('@/views/notes/index.vue')
       },
       {
-        path: '/relax',
+        path: '/my-tools/relax',
         component: () => import('@/views/relax/index.vue')
       },
       {
-        path: '/demos',
+        path: '/my-tools/demos',
         component: () => import('@/views/demos/index.vue')
       },
     ],
   },
   {
-    path: '/links',
+    path: '/my-tools/links',
     name: 'linkes',
     component: () => import('@/views/links/index.vue')
   },
   {
     path: '/:pathMatch(.*)*',
-    redirect: '/tools',
+    redirect: '/my-tools/tools',
     hidden: true
   }
 ]
