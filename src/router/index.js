@@ -5,43 +5,43 @@ export const constantRoutes = [
   {
     path: '/',
     component: Layout,
-    redirect: '/my-tools/tools',
+    redirect: '/tools',
     hidden: true,
     children: [
       {
-        path: '/my-tools/home',
+        path: '/home',
         component: () => import('@/views/home/index.vue')
       },
       {
-        path: '/my-tools/games',
+        path: '/games',
         component: () => import('@/views/games/index.vue')
       },
       {
-        path: '/my-tools/tools',
+        path: '/tools',
         component: () => import('@/views/tools/index.vue')
       },
       {
-        path: '/my-tools/notes',
+        path: '/notes',
         component: () => import('@/views/notes/index.vue')
       },
       {
-        path: '/my-tools/relax',
+        path: '/relax',
         component: () => import('@/views/relax/index.vue')
       },
       {
-        path: '/my-tools/demos',
+        path: '/demos',
         component: () => import('@/views/demos/index.vue')
       },
     ],
   },
   {
-    path: '/my-tools/links',
+    path: '/links',
     name: 'linkes',
     component: () => import('@/views/links/index.vue')
   },
   {
     path: '/:pathMatch(.*)*',
-    redirect: '/my-tools/tools',
+    redirect: '/tools',
     hidden: true
   }
 ]
