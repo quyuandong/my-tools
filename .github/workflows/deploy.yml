@@ -1,4 +1,4 @@
-name: Build and Deploy to github & gitee & algolia
+name: my-tools  Build and Deploy to github & gitee
 on:
   # 手动触发
   # workflow_dispatch:
