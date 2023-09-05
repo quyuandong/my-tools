@@ -2,12 +2,7 @@
   <div class="page">
     <div class="navigation-tools">
       <dl>
-        <dd
-          v-for="(nav, navindex) in list"
-          :key="navindex"
-          :id="navindex"
-          :class="{ nav_active: navindex == curIndex }"
-        >
+        <dd v-for="(nav, navindex) in list" :key="navindex" :id="navindex" :class="{ nav_active: navindex == curIndex }">
           <a :href="`#${nav.id}`" @click="toNav(navindex)">{{ nav.name }}</a>
         </dd>
       </dl>
@@ -16,10 +11,9 @@
       <section v-for="(tool, index) in list" :key="index">
         <span :id="tool.id" class="point"></span>
         <header>{{ tool.name }}</header>
-        <a target="_blank" class="tool-item" v-for="link in tool.collection" :key="link.link" :href="link.link"
-          ><img :data-src="link.icon" alt="" :src="link.icon" />
-          <span class="tool-name">{{ link.name }}</span></a
-        >
+        <a target="_blank" class="tool-item" v-for="link in tool.collection" :key="link.link" :href="link.link"><img
+            :data-src="link.icon" alt="" :src="link.icon" />
+          <span class="tool-name">{{ link.name }}</span></a>
       </section>
     </div>
 
@@ -35,7 +29,7 @@ const getAssetsFile = (name) => {
 }
 
 const list = ref([
-{
+  {
     id: 'often',
     name: '常用工具',
     collection: [
@@ -590,32 +584,32 @@ const list = ref([
   }
 ])
 
-  // {
-  //   id: '更多导航',
-  //   name: '更多导航',
-  //   collection: [
-  //     {
-  //       icon: 'https://mp-b28966cb-26bc-43ae-b98b-aa286fad0729.cdn.bspapp.com/cloudstorage/31e91b77-d492-4f27-9ce1-d20ad54ad8e2.ico',
-  //       name: '万能导航',
-  //       link: 'https://www.5cv.top/'
-  //     },
-  //     {
-  //       icon: 'https://static.runoob.com/images/c-runoob-logo.ico',
-  //       name: '菜鸟工具',
-  //       link: 'https://c.runoob.com/'
-  //     },
-  //     {
-  //       icon: 'http://www.cxy521.com/static/img/favicon.ico',
-  //       name: '程序员导航',
-  //       link: 'http://www.cxy521.com/'
-  //     },
-  //     {
-  //       icon: 'https://tool.lu/favicon.ico',
-  //       name: '在线工具',
-  //       link: 'https://tool.lu/'
-  //     }
-  //   ]
-  // },
+// {
+//   id: '更多导航',
+//   name: '更多导航',
+//   collection: [
+//     {
+//       icon: 'https://mp-b28966cb-26bc-43ae-b98b-aa286fad0729.cdn.bspapp.com/cloudstorage/31e91b77-d492-4f27-9ce1-d20ad54ad8e2.ico',
+//       name: '万能导航',
+//       link: 'https://www.5cv.top/'
+//     },
+//     {
+//       icon: 'https://static.runoob.com/images/c-runoob-logo.ico',
+//       name: '菜鸟工具',
+//       link: 'https://c.runoob.com/'
+//     },
+//     {
+//       icon: 'http://www.cxy521.com/static/img/favicon.ico',
+//       name: '程序员导航',
+//       link: 'http://www.cxy521.com/'
+//     },
+//     {
+//       icon: 'https://tool.lu/favicon.ico',
+//       name: '在线工具',
+//       link: 'https://tool.lu/'
+//     }
+//   ]
+// },
 
 const curIndex = ref(0)
 const toNav = (index) => {
@@ -629,6 +623,7 @@ const toNav = (index) => {
   position: relative;
   max-width: 1300px;
 }
+
 .navigation-tools {
   position: fixed;
   width: fit-content;
@@ -638,10 +633,12 @@ const toNav = (index) => {
   box-sizing: border-box;
   transition: all 0.2s linear;
   overflow: auto;
+
   dd {
     margin: 0;
     padding: 6px 0;
     letter-spacing: 0.5px;
+
     a {
       font-size: 14px;
       color: #5e5d5b;
@@ -649,12 +646,14 @@ const toNav = (index) => {
       padding: 2px 4px;
       transition: 0.1s;
       text-decoration: none;
+
       &:hover {
         background: #ff5a00;
         border-radius: 3px;
       }
     }
   }
+
   .nav_active {
     a {
       color: #ff5a00;
@@ -662,10 +661,12 @@ const toNav = (index) => {
     }
   }
 }
+
 .tools-box {
   width: 1080px;
   min-height: 800px;
   margin: 0 auto;
+
   section {
     position: relative;
     width: 100%;
@@ -677,12 +678,14 @@ const toNav = (index) => {
     flex-wrap: wrap;
     margin-bottom: 20px;
     background-color: $--color-box;
-    .point{
+
+    .point {
       position: absolute;
       left: 0;
       top: -60px;
       opacity: 0;
     }
+
     header {
       position: absolute;
       left: 0;
@@ -695,18 +698,21 @@ const toNav = (index) => {
       flex-shrink: 0;
       border-bottom: 0.5px solid $--color-border;
     }
+
     .tool-item {
       width: 164px;
       height: 42px;
       flex-shrink: 0;
       line-height: 42px;
       cursor: pointer;
+
       img {
         width: 20px;
         height: 20px;
         margin-right: 5px;
         vertical-align: middle;
       }
+
       .tool-name {
         font-size: 14px;
         color: $--color-text;
@@ -724,17 +730,20 @@ const toNav = (index) => {
     //   display: flex;
     // }
   }
-  .tools-box{
+
+  .tools-box {
     width: unset;
-    section{
+
+    section {
       padding: 58px 16px 16px 16px;
-      header{
+
+      header {
         padding: 0 16px;
       }
-      .tool-item{
+
+      .tool-item {
         width: 140px;
       }
     }
   }
-}
-</style>
+}</style>
