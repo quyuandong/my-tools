@@ -16,12 +16,11 @@
 
   <footer>
     <div class="site-links">
-      <a href="https://gitee.com/web-abin/my-tools" target="_blank">源码链接</a>、
-      <a href="https://github.com/web-abin" target="_blank">GitHub主页</a>、
-      <a href="https://juejin.cn/user/994399097982728" target="_blank">掘金主页</a>、
-      <a href="https://blog.csdn.net/qq_38974163?type=blog" target="_blank">CSDN主页</a>、
-      <a href="http://web-abin.gitee.io/blog" target="_blank">个人博客</a>、
-      <a href="http://web-abin.gitee.io/blog" target="_blank"><router-link to="links">友情链接</router-link></a>
+      <a href="https://github.com/quyuandong/my-tools/" target="_blank">源码链接</a>、
+      <a href="https://github.com/quyuandong" target="_blank">GitHub主页</a>、
+      <a href="https://gitee.com/qyd_me" target="_blank">Gitee主页</a>、
+      <a href="https://juejin.cn/user/3825956195148631" target="_blank">掘金主页</a>、
+      <a href="https://qyd_9.gitee.io/my-blog-docs/" target="_blank">个人博客</a>、
     </div>
     
     <div class="site-data">

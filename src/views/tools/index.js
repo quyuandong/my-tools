@@ -8,9 +8,11 @@ import toolsData from "./data/tools.data";
 import imgData from "./data/img.data";
 // css处理
 import cssData from "./data/css.data";
+// 图表相关的
+import iconData from "./data/icon.data";
 
 // 未分类的数据
 import data from "./data/data";
 
 /* 数据源入口 */
-export default [toolsData, imgData, cssData, ...data];
+export default [toolsData, imgData, cssData,iconData, ...data];
