@@ -5,7 +5,7 @@
 
 <template>
   <router-view v-slot="{ Component,route }">
-    <keep-alive :include="Relax">
+    <keep-alive :include="['Relax']">
       <component :is="Component" :key="route.name"/>
     </keep-alive>
     <!-- <keep-alive>
